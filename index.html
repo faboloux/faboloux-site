@@ -15,14 +15,8 @@
     .card { background: white; border-radius: 12px; padding: 24px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
     .card h2 { color: #1a5fb4; font-size: 1.3em; margin-bottom: 12px; border-left: 4px solid #1a5fb4; padding-left: 12px; }
     .card p { color: #555; margin-bottom: 10px; }
-    .cert { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
-    .cert-info { flex: 1; min-width: 250px; }
-    .cert-info h3 { color: #26a269; font-size: 1.1em; }
-    .cert-info span { color: #888; font-size: 0.9em; }
     .cta { display: block; width: 100%; padding: 16px; background: linear-gradient(135deg, #1a5fb4, #26a269); color: white; text-align: center; border-radius: 10px; font-size: 1.1em; font-weight: bold; text-decoration: none; margin-top: 20px; cursor: pointer; transition: transform 0.2s; }
     .cta:hover { transform: scale(1.03); }
-    .tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
-    .tag { background: #e8f4e8; color: #26a269; padding: 4px 12px; border-radius: 20px; font-size: 0.85em; }
     .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
     .grid-item { background: #f8f8f8; padding: 16px; border-radius: 10px; text-align: center; }
     .grid-item .num { font-size: 2em; font-weight: bold; color: #1a5fb4; }
@@ -33,6 +27,18 @@
     .highlight { background: #fff8e1; border-left: 4px solid #f9a825; padding: 12px; border-radius: 0 8px 8px 0; margin: 16px 0; }
     .highlight strong { color: #e65100; }
     footer { text-align: center; padding: 30px; color: #aaa; font-size: 0.85em; }
+    .timeline { position: relative; padding-left: 20px; margin: 20px 0; }
+    .timeline::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: linear-gradient(to bottom, #1a5fb4, #26a269); border-radius: 2px; }
+    .timeline-item { position: relative; padding: 12px 0 12px 24px; }
+    .timeline-item::before { content: ''; position: absolute; left: -8px; top: 18px; width: 12px; height: 12px; background: #26a269; border-radius: 50%; border: 3px solid white; box-shadow: 0 0 0 2px #26a269; }
+    .timeline-year { font-weight: bold; color: #1a5fb4; font-size: 1.1em; }
+    .timeline-desc { color: #555; margin-top: 4px; }
+    .timeline-tag { display: inline-block; background: #e3f2fd; color: #1a5fb4; padding: 2px 8px; border-radius: 10px; font-size: 0.8em; margin-top: 6px; }
+    .hero-badge { display: inline-block; background: linear-gradient(135deg, #ffd700, #ff8c00); color: #333; padding: 8px 20px; border-radius: 30px; font-weight: bold; font-size: 1.1em; margin: 16px 0; box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4); }
+    .cert-summary { display: flex; gap: 16px; flex-wrap: wrap; margin: 16px 0; }
+    .cert-stat { background: linear-gradient(135deg, #e8f4e8, #f0f9f0); padding: 12px 20px; border-radius: 10px; text-align: center; flex: 1; min-width: 120px; }
+    .cert-stat .num { font-size: 1.8em; font-weight: bold; color: #26a269; }
+    .cert-stat .label { color: #888; font-size: 0.85em; }
   </style>
 </head>
 <body>
@@ -43,14 +49,49 @@
   </header>
 
   <div class="container">
-    <!-- 证书介绍 -->
+    <!-- 证书时间线 -->
     <div class="card">
-      <h2>🏆 关于我</h2>
-      <div class="cert">
-        <div class="cert-info">
-          <p>已通过 <strong>一级建造师</strong> 考试（全科通过）</p>
-          <h3>实务130+ · 经济85+ · 法规110+ · 管理105+</h3>
-          <span>注册执业资格 · 全国通用</span>
+      <h2>🏆 我的考证历程</h2>
+      <div class="hero-badge">🔥 5年5证 · 实战派</div>
+      <div class="cert-summary">
+        <div class="cert-stat">
+          <div class="num">3</div>
+          <div class="label">一建专业</div>
+        </div>
+        <div class="cert-stat">
+          <div class="num">1</div>
+          <div class="label">一造证书</div>
+        </div>
+        <div class="cert-stat">
+          <div class="num">1</div>
+          <div class="label">咨询工程师</div>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">2015年 · 一级建造师（建筑）</div>
+          <div class="timeline-desc">三个月一次性过四科！实务130+、经济85+、法规110+、管理105+</div>
+          <span class="timeline-tag">🏆 一次性通过</span>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2017年 · 一级建造师（水利）</div>
+          <div class="timeline-desc">增项通过</div>
+          <span class="timeline-tag">📈 增项</span>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2018年 · 一级造价工程师（建筑）</div>
+          <div class="timeline-desc">跨专业挑战成功</div>
+          <span class="timeline-tag">📈 跨专业</span>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2021年 · 一级建造师（机电）</div>
+          <div class="timeline-desc">增项通过</div>
+          <span class="timeline-tag">📈 增项</span>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2022年 · 咨询工程师</div>
+          <div class="timeline-desc">持续精进</div>
+          <span class="timeline-tag">📚 继续教育</span>
         </div>
       </div>
       <div class="highlight">
@@ -91,7 +132,7 @@
       <p>资料为整理版本，仅收取 <strong>一点辛苦整理费</strong>，介意者勿扰。</p>
       <div class="wechat-box">
         <p>👇 长按下方二维码添加微信</p>
-        <div class="wechat-id">微信号</div>
+        <div class="wechat-id">haibao131420</div>
         <p style="margin-top:12px;">📝 备注「一建资料」，秒通过</p>
       </div>
       <a class="cta" href="mailto:faboloux@example.com?subject=一建资料领取&body=你好，我想领取一建备考资料，谢谢！">📧 邮件领取（备用方式）</a>

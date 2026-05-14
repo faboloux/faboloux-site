@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数字权益 · 省钱购 - faboloux.cc.cd</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f6fa; color: #333; }
+        
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; padding: 20px; text-align: center; }
+        .header h1 { font-size: 1.5rem; margin-bottom: 5px; }
+        .header p { opacity: 0.9; font-size: 0.9rem; }
+        
+        .nav { background: #fff; padding: 10px 15px; display: flex; justify-content: center; gap: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .nav a { color: #667eea; text-decoration: none; font-size: 0.9rem; }
+        .nav a:hover { text-decoration: underline; }
+        
+        .container { max-width: 800px; margin: 0 auto; padding: 15px; }
+        
+        .section { background: #fff; border-radius: 12px; padding: 15px; margin-bottom: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        .section-title { font-size: 1.1rem; font-weight: 600; margin-bottom: 15px; padding-bottom: 10px; border-bottom: 2px solid #667eea; }
+        
+        .product-card { background: #f8f9fa; border-radius: 10px; padding: 15px; margin-bottom: 12px; }
+        .product-name { font-weight: 600; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+        .product-name .tag { background: #667eea; color: #fff; font-size: 0.7rem; padding: 2px 8px; border-radius: 10px; }
+        
+        .price-table { width: 100%; font-size: 0.85rem; }
+        .price-table th { background: #e9ecef; padding: 8px; text-align: left; font-weight: 500; }
+        .price-table td { padding: 8px; border-bottom: 1px solid #eee; }
+        .price-table tr:last-child td { border-bottom: none; }
+        .price-table .official { color: #dc3545; text-decoration: line-through; }
+        .price-table .ours { color: #28a745; font-weight: 600; }
+        .price-table .save { color: #ff6b6b; font-size: 0.8rem; }
+        
+        .tip { background: #fff3cd; border-left: 4px solid #ffc107; padding: 12px; border-radius: 0 8px 8px 0; margin-bottom: 15px; font-size: 0.85rem; }
+        .tip strong { color: #856404; }
+        
+        .contact-section { text-align: center; padding: 25px; }
+        .contact-section h3 { margin-bottom: 15px; color: #667eea; }
+        .contact-section p { color: #666; margin-bottom: 15px; font-size: 0.95rem; }
+        
+        .qr-codes { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+        .qr-item { text-align: center; }
+        .qr-item img { width: 120px; height: 120px; border: 2px solid #eee; border-radius: 8px; }
+        .qr-item p { margin-top: 8px; font-size: 0.85rem; color: #666; }
+        
+        .footer { text-align: center; padding: 20px; color: #999; font-size: 0.8rem; }
+        
+        @media (max-width: 480px) {
+            .header h1 { font-size: 1.3rem; }
+            .qr-codes { gap: 20px; }
+            .qr-item img { width: 100px; height: 100px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎫 数字权益 · 省钱购</h1>
+        <p>官方价格的 5-8 折，品质保证</p>
+    </div>
+    
+    <div class="nav">
+        <a href="index.html">📅 证书时间线</a>
+        <a href="guide.html">📚 备考攻略</a>
+        <a href="shop.html">🎫 省钱购</a>
+    </div>
+    
+    <div class="container">
+        <div class="tip">
+            <strong>💡 省钱提示：</strong>所有会员均为官方直充，支持改价，保证售后。比自己买便宜 30%-50%！
+        </div>
+        
+        <!-- 影视会员 -->
+        <div class="section">
+            <div class="section-title">🎬 影视会员</div>
+            
+            <div class="product-card">
+                <div class="product-name">腾讯视频 VIP <span class="tag">热销</span></div>
+                <table class="price-table">
+                    <tr><th>类型</th><th>官方价</th><th>我们价</th><th>省</th></tr>
+                    <tr><td>月卡</td><td class="official">¥30</td><td class="ours">¥15</td><td class="save">省50%</td></tr>
+                    <tr><td>季卡</td><td class="official">¥68</td><td class="ours">¥38</td><td class="save">省44%</td></tr>
+                    <tr><td>年卡</td><td class="official">¥258</td><td class="ours">¥128</td><td class="save">省50%</td></tr>
+                </table>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-name">爱奇艺 VIP</div>
+                <table class="price-table">
+                    <tr><th>类型</th><th>官方价</th><th>我们价</th><th>省</th></tr>
+                    <tr><td>月卡</td><td class="official">¥30</td><td class="ours">¥15</td><td class="save">省50%</td></tr>
+                    <tr><td>年卡</td><td class="official">¥248</td><td class="ours">¥118</td><td class="save">省52%</td></tr>
+                </table>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-name">优酷 VIP</div>
+                <table class="price-table">
+                    <tr><th>类型</th><th>官方价</th><th>我们价</th><th>省</th></tr>
+                    <tr><td>月卡</td><td class="official">¥25</td><td class="ours">¥12</td><td class="save">省52%</td></tr>
+                    <tr><td>年卡</td><td class="official">¥198</td><td class="ours">¥88</td><td class="save">省56%</td></tr>
+                </table>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-name">芒果TV 会员</div>
+                <table class="price-table">
+                    <tr><th>类型</th><th>官方价</th><th>我们价</th><th>省</th></tr>
+                    <tr><td>月卡</td><td class="official">¥25</td><td class="ours">¥10</td><td class="save">省60%</td></tr>
+                    <tr><td>年卡</td><td class="official">¥218</td><td class="ours">¥78</td><td class="save">省64%</td></tr>
+                </table>
+            </div>
+        </div>
+        
+        <!-- 音乐会员 -->
+        <div class="section">
+            <div class="section-title">🎵 音乐会员</div>
+            
+            <div class="product-card">
+                <div class="product-name">网易云音乐 黑胶VIP</div>
+                <table class="price-table">
+                    <tr><th>类型</th><th>官方价</th><th>我们价</th><th>省</th></tr>
+                    <tr><td>月卡</td><td class="official">¥20</td><td class="ours">¥8</td><td class="save">省60%</td></tr>
+                    <tr><td>年卡</td><td class="official">¥168</td><td class="ours">¥58</td><td class="save">省65%</td></tr>
+                </table>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-name">QQ音乐 豪华绿钻</div>
+                <table class="price-table">
+                    <tr><th>类型</th><th>官方价</th><th>我们价</th><th>省</th></tr>
+                    <tr><td>月卡</td><td class="official">¥18</td><td class="ours">¥7</td><td class="save">省61%</td></tr>
+                    <tr><td>年卡</td><td class="official">¥148</td><td class="ours">¥55</td><td class="save">省63%</td></tr>
+                </table>
+            </div>
+        </div>
+        
+        <!-- 网盘会员 -->
+        <div class="section">
+            <div class="section-title">💾 网盘会员</div>
+            
+            <div class="product-card">
+                <div class="product-name">百度网盘 超级会员</div>
+                <table class="price-table">
+                    <tr><th>类型</th><th>官方价</th><th>我们价</th><th>省</th></tr>
+                    <tr><td>月卡</td><td class="official">¥30</td><td class="ours">¥18</td><td class="save">省40%</td></tr>
+                    <tr><td>年卡</td><td class="official">¥298</td><td class="ours">¥178</td><td class="save">省40%</td></tr>
+                </table>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-name">夸克网盘 会员</div>
+                <table class="price-table">
+                    <tr><th>类型</th><th>官方价</th><th>我们价</th><th>省</th></tr>
+                    <tr><td>月卡</td><td class="official">¥20</td><td class="ours">¥10</td><td class="save">省50%</td></tr>
+                    <tr><td>年卡</td><td class="official">¥198</td><td class="ours">¥88</td><td class="save">省56%</td></tr>
+                </table>
+            </div>
+        </div>
+        
+        <!-- 联系购买 -->
+        <div class="section contact-section">
+            <h3>📩 如何购买</h3>
+            <p>复制商品名称 + 您的账号，闲鱼私信我即可<br>支持改价，安全可靠</p>
+            
+            <div class="qr-codes">
+                <div class="qr-item">
+                    <img src="wechat-qr.jpg" alt="微信联系" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect fill=%22%23666%22 width=%22100%22 height=%22100%22/><text x=%2250%22 y=%2255%22 fill=%22%23fff%22 text-anchor=%22middle%22 font-size=%2210%22>微信二维码</text></svg>'">
+                    <p>微信联系</p>
+                </div>
+            </div>
+            
+            <p style="margin-top: 20px; color: #999; font-size: 0.85rem;">
+                ⏰ 回复时间：9:00 - 22:00<br>
+                ⚡ 自动发货，秒到账
+            </p>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>© 2024 faboloux.cc.cd · 数字权益省钱购</p>
+    </div>
+</body>
+</html>
